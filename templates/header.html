@@ -1,0 +1,45 @@
+<nav class="bg-[#0B1121] py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="logo-container">
+            <a href="/" class="text-blue-400 text-2xl font-bold relative">
+                <span class="absolute name-animation">Jan Smida</span>
+                <span class="initials soft-glow">JS</span>
+            </a>
+        </div>
+        
+        <div class="flex space-x-8">
+            <a href="{{ url_for('about_me') }}" class="text-gray-300 hover:text-white transition-colors duration-300">About me</a>
+            <a href="{{ url_for('story_time') }}" class="text-gray-300 hover:text-white transition-colors duration-300">Story Time</a>
+            <a href="{{ url_for('credentials') }}" class="text-gray-300 hover:text-white transition-colors duration-300">Credentials</a>
+        </div>
+    </div>
+</nav>
+
+<style>
+.logo-container {
+    position: relative;
+}
+
+.name-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.initials {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.soft-glow {
+    text-shadow: 0 0 3px rgba(0, 180, 255, 0.5), 0 0 5px rgba(0, 180, 255, 0.3);
+    color: rgb(96, 165, 250);
+}
+
+.logo-container:hover .name-animation {
+    opacity: 1;
+}
+
+.logo-container:hover .initials {
+    opacity: 0;
+}
+</style>

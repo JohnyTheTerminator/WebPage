@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <!-- Levá strana - Fotka -->
+        <div class="relative mt-24"> <!-- Přidáno mt-24 pro větší mezeru nahoře -->
+            <div class="w-96 mx-auto bg-[#111b33] rounded-2xl overflow-hidden">
+                <!-- Fotka -->
+                <img src="{{ url_for('static', filename='profile_pic.png') }}"
+                     class="w-full h-full object-cover"
+                     alt="Jan Šmída">
+                
+                <!-- Text pod fotkou -->
+                <div class="text-center py-4 space-y-1">
+                    <p class="text-blue-400 text-xl font-semibold">Jan Šmída - Data Analyst</p>
+                    <p class="text-gray-400 text-lg">More than 3 years of experience in data analysis</p>
+                    <p class="text-gray-400 text-lg">Specialized in automotive & logistics</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pravá strana - Text -->
+        <div class="space-y-6 text-gray-300">
+            <h1 class="text-3xl text-white font-semibold mb-8">Hello dear reader,</h1>
+            
+            <p class="leading-relaxed">
+                My journey into data analytics began with the completion of the Google Data Analyst Certificate, a pivotal moment that opened the door to my first professional role at Volkswagen Financial Services. This position marked the discovery of my deep passion for data, whether it was designing insightful visual reports or automating complex processes to enhance efficiency. The hands-on experience I gained during this time was invaluable, as it sharpened my ability to transform raw data into meaningful insights and optimize operations for better decision-making.
+            </p>
+
+            <p class="leading-relaxed">
+                While at Volkswagen, I also completed my Bachelor's degree in International Business, which provided me with a broader understanding of global business dynamics and deepened my analytical skills. This academic milestone complemented my professional development and guided me toward exploring new opportunities within the automotive industry, giving me a more well-rounded approach to tackling complex business challenges.
+            </p>
+
+            <p class="leading-relaxed">
+                Today, I continue to apply my expertise at DODO, where I hold a dual role. As a Platform Developer, I focus on building efficient and scalable automation solutions that streamline internal processes. In addition, as a Data Quality Analyst, I am responsible for ensuring that our data remains accurate and that our reports are both reliable and user-friendly, empowering the company to make confident, data-driven decisions. My current position allows me to blend my technical skills with my business acumen, making meaningful contributions to the organization's success.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

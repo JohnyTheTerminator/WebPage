@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mx-auto px-6 py-16 min-h-screen">
+   <h1 class="text-4xl font-bold text-white text-center mb-24">Work Experience</h1>
+   
+   <div class="max-w-6xl mx-auto">
+       <!-- Vertikální čára -->
+       <div class="absolute left-1/2 w-0.5 h-full bg-blue-400 opacity-20"></div>
+
+       <!-- DODO -->
+       <div class="relative mb-48">
+           <!-- Datum -->
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               June 2024 - Now
+           </div>
+           
+           <!-- Kolečko -->
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <!-- Content -->
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/dodo.png') }}" alt="DODO" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">DODO Czech</h3>
+                   <p class="text-blue-400">Data Quality Analyst</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>My work primarily involved data quality control and validation at the source, in the database, and subsequently in reports.</p>
+                   <p>Checking the logic of models in Power BI and testing them from both a user and technical perspective.</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- TechData SYNNEX -->
+       <div class="relative mb-48">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               March - June 2024
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/techdata.png') }}" alt="TechData" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">TechData SYNNEX, Prague</h3>
+                   <p class="text-blue-400">Data Analyst/Scientist</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>Member of marketing team oriented towards contact targeting. Working with Snowflake and Azure DevOps, Git, Azure Databricks and extended work with Excel (VBA).</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- Volkswagen -->
+       <div class="relative mb-48">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               July 2022 - February 2024
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/vw.png') }}" alt="Volkswagen" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">Volkswagen Financial Services</h3>
+                   <p class="text-blue-400">Data Analyst</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>DWH orientation and data analysis/manipulation via Power BI. Coding in VBA (Excel) in order to automate business tasks. Reporting from AS400 and MS SQL Server. Developing new procedures and automative tasks.</p>
+               </div>
+           </div>
+       </div>
+       
+       <div class="relative mb-24">
+        <div class="flex items-center justify-center">
+            <div class="w-64 h-px bg-gray-600 opacity-20"></div>
+            <p class="mx-4 text-gray-400 text-m">Part-time Experience</p>
+            <div class="w-64 h-px bg-gray-600 opacity-20"></div>
+        </div>
+    </div>   
+
+       <!-- MEWS -->
+       <div class="relative mb-48">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               February 2020 - August 2020
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/mews.png') }}" alt="Mews" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">Mews s.r.o</h3>
+                   <p class="text-blue-400">Analysis/Data Verification</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>Working with the database of companies with which contracts were signed and subsequent tracing/confirmation/updating of data and information if necessary. Work with strip and communication in English with support regarding the verification of documented documents.</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- Footlocker -->
+       <div class="relative mb-48">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               October 2018 - January 2021
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/footlocker.png') }}" alt="Footlocker" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">Footlocker</h3>
+                   <p class="text-blue-400">Sales associate</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>Customer care, communication in a foreign language on a daily basis (primarily English, occasionally French, branch in Palladium), replenishment of goods, registration of goods in the system. Training systems focused on marketing and customer care.</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- VLTAVA LABE MEDIA -->
+       <div class="relative mb-48">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               February 2017 - May 2018
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/vltava.png') }}" alt="Vltava Labe Media" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">VLTAVA LABE MEDIA a.s.</h3>
+                   <p class="text-blue-400">Receptionist</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>General activities as part of the reception, distribution of mail, welcoming clients, preparation of conference rooms and time scheduling, management of the employee database.</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- SPORTISIMO -->
+       <div class="relative">
+           <div class="absolute left-1/2 transform -translate-x-1/2 text-blue-400 text-sm mb-4">
+               March 2016 - June 2018
+           </div>
+           
+           <div class="absolute left-1/2 transform -translate-x-1/2 mt-8">
+               <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+           </div>
+
+           <div class="grid grid-cols-2 gap-24 mt-8">
+               <!-- Levá strana - Firma -->
+               <div class="pr-12">
+                   <img src="{{ url_for('static', filename='Logo_pictures/sportisimo.png') }}" alt="Sportisimo" class="w-20 h-20 object-contain mb-2">
+                   <h3 class="text-white text-xl font-bold">SPORTISIMO s.r.o</h3>
+                   <p class="text-blue-400">Sales Staff</p>
+               </div>
+
+               <!-- Pravá strana - Text -->
+               <div class="text-gray-300 space-y-4 pl-24 text-lg">
+                   <p>Communication with customers, continuous maintenance of the store and supervision of the replenishment of goods in your sector, manual work in the warehouse with goods (shipping, new orders, returns)</p>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+   entries.forEach(entry => {
+       if (entry.isIntersecting) {
+           entry.target.classList.add('opacity-100', 'translate-y-0');
+           entry.target.classList.remove('opacity-0', 'translate-y-10');
+       }
+   });
+}, {
+   threshold: 0.1
+});
+
+document.querySelectorAll('.relative').forEach((item) => {
+   item.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+   observer.observe(item);
+});
+</script>
+{% endblock %}
